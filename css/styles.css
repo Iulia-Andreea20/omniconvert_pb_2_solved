@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: Verdana;
+}
+
+.container {
+    max-width: 450px;
+    margin: 5px auto;
+}
+
+.bubble {
+    position: relative;
+    background: #3b3737;
+    color: #FFFFFF;
+    font-size: 19px;
+    line-height: 53px;
+    text-align: center;
+    width: 448px;
+    height: 54px;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: #3b3737 transparent;
+    border-width: 9px 8px 0;
+    bottom: -9px;
+    left: 85%;
+    margin-left: -8px;
+}
+
+#time-left-highlighter {
+    color: #F15F32;
+    font-weight: bold;
+}
