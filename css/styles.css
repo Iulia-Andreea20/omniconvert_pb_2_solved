@@ -1,6 +1,5 @@
 body {
     margin: 0px;
-    text-align: center;
     font-family: Verdana;
 }
 
@@ -9,7 +8,7 @@ body {
     margin: 5px auto;
 }
 
-.bubble {
+.chat-shape {
     position: relative;
     background: #3b3737;
     color: #FFFFFF;
@@ -22,7 +21,7 @@ body {
     padding: 0px;
 }
 
-.bubble:after {
+.chat-shape:after {
     content: '';
     position: absolute;
     display: block;
@@ -39,4 +38,22 @@ body {
 #time-left-highlighter {
     color: #F15F32;
     font-weight: bold;
+}
+
+.progress-bar {
+    position: relative;
+    margin: 25px auto 0;
+    height: 18px;
+    border: 0.7px solid rgb(153, 144, 144);
+    overflow: hidden;
+}
+
+span.visual-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background: #F15F32;
+    transition: all .3s;
 }
