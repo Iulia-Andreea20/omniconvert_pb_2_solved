@@ -11,12 +11,7 @@ $(document).ready(function () {
             let progress = $('.progress-bar .visual-progress')
             let counter_value = 0;
             let moneyNeededAfterDonation = amountNeeded - Number(donationAmount.value);
-            if (Number(donationAmount.value) >= 100) {
-                counter_value = (Number(donationAmount.value) * 100) / amountNeeded;
-            }
-            else {
-                counter_value = Number(donationAmount.value);
-            }
+            counter_value = (Number(donationAmount.value) * 100) / amountNeeded;
 
             if (counter_value >= 0 && counter_value <= amountNeeded) {
 
