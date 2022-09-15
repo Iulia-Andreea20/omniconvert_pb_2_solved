@@ -37,7 +37,7 @@ $(document).ready(function () {
             localStorage.setItem("accumulatedMoney", JSON.stringify(Number(donationAmount.value)));
             console.log(localStorage.getItem("accumulatedMoney"));
         }
-
+        // localStorage.clear();
     });
 
 });
